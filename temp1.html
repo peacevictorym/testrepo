@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chic Boutique Harare | Digital Card</title>
+<style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif
+  }
+  body{
+    background:#fff5f7;
+    display:flex;
+    justify-content:center
+  }
+  .card{
+    width:100%;
+    max-width:420px;
+    background:linear-gradient(180deg,#fff,#fff5f7 50%,#ffe8ee);
+    min-height:100vh;
+    padding:28px 18px 40px;
+    text-align:center;
+    color:#111
+  }
+  .top-bar{
+    font-size:11px;
+    letter-spacing:2px;
+    color:#c2185b;
+    font-weight:bold
+  }
+  h1{
+    font-size:29px;
+    color:#111;
+    line-height:1.1;
+    margin-top:6px
+  }
+  h1 span{
+    color:#e91e63
+  }
+  .tag{
+    font-size:12px;
+    letter-spacing:1px;
+    color:#777;
+    margin:6px 0 14px
+  }
+  .hero{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:16px;
+    margin:0 auto
+  }
+  h2{
+    font-size:22px;
+    margin-top:14px
+  }
+  .role{
+    color:#e91e63;
+    font-weight:bold;
+    font-size:13px;
+    margin:4px 0 10px
+  }
+  .desc{
+    font-size:14px;
+    line-height:1.5;
+    color:#555;
+    background:white;
+    padding:12px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,.05)
+  }
+  .row{
+    display:flex;
+    gap:10px;
+    margin-top:16px
+  }
+  .btn{
+    flex:1;
+    padding:14px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px
+  }
+  .call{
+    background:#111;
+    color:white
+  }
+  .wa{
+    background:#25D366;
+    color:white
+  }
+  .social{
+    display:flex;
+    gap:8px;
+    margin-top:12px
+  }
+  .social a{
+    flex:1;
+    padding:11px 4px;
+    border-radius:50px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:13px
+  }
+  .ig{
+    background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf)
+  }
+  .fb{
+    background:#1877F2
+  }
+  .tt{
+    background:#000
+  }
+  .big{
+    display:block;
+    width:100%;
+    padding:15px;
+    border-radius:50px;
+    font-weight:bold;
+    font-size:16px;
+    text-decoration:none;
+    margin-top:12px;
+    cursor:pointer;
+    border:none
+  }
+  .pink{
+    background:#e91e63;
+    color:white
+  }
+  .black{
+    background:#111;
+    color:white
+  }
+  .white{
+    background:white;
+    color:#111;
+    border:1px solid #eee
+  }
+  /* Catalogue */
+  .section-title{
+    font-size:18px;
+    text-align:left;
+    margin:20px 0 10px}
+  .filter{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px}
+  .filter button{white-space:nowrap;padding:8px 14px;border-radius:50px;border:1px solid #e91e63;background:white;color:#e91e63;font-weight:bold;cursor:pointer;font-size:13px}
+  .filter button.active{background:#e91e63;color:white}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;text-align:left}
+  .item{background:white;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+  .item img{width:100%;height:140px;object-fit:cover}
+  .item-info{padding:10px}
+  .item-info b{font-size:14px;display:block}
+  .item-info span{font-size:12px;color:#888}
+  .price{color:#e91e63;font-weight:bold;font-size:15px;margin:6px 0}
+  .order{width:100%;padding:9px;border:none;border-radius:50px;background:#111;color:white;font-weight:bold;font-size:13px;cursor:pointer}
+  .badge{position:relative}
+  .badge::after{content:"NEW";position:absolute;top:8px;left:8px;background:#e91e63;color:white;font-size:10px;font-weight:bold;padding:4px 8px;border-radius:50px}
+  .footer{font-size:12px;color:#999;margin-top:22px;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="card">
+  <!-- ===== EDIT HERE ===== -->
+  <div class="top-bar">HARARE • NEW ARRIVALS WEEKLY</div>
+  <h1>Chic <span>Boutique</span></h1>
+  <div class="tag">LADIES FASHION • SHOES • BAGS</div>
+
+  <!-- Change hero: boutique shop photo, name it shop.jpg -->
+  <img class="hero" src="shop.jpg" alt="Boutique">
+
+  <h2>Rudo Chikafu</h2>
+  <div class="role">Owner • Personal Shopper</div>
+  <div class="desc">Trendy dresses, shoes & bags. Sizes S - 3XL. Delivery in Harare. Order on WhatsApp - we reply fast 💕</div>
+
+  <div class="row">
+    <!-- EDIT: phone -->
+    <a class="btn call" href="tel:+263713354547">📞 Call</a>
+    <!-- EDIT: WhatsApp -->
+    <a class="btn wa" href="https://wa.me/263713354547?text=Hi%20Chic%20Boutique!%20I%20want%20to%20order">WhatsApp</a>
+  </div>
+
+  <div class="social">
+    <a class="ig" href="https://instagram.com/YOURHANDLE">Instagram</a>
+    <a class="fb" href="https://facebook.com/YOURPAGE">Facebook</a>
+    <a class="tt" href="https://tiktok.com/@YOURHANDLE">TikTok</a>
+  </div>
+
+  <!-- EDIT: Maps link -->
+  <a class="big black" href="https://maps.google.com/?q=Jason+Moyo+Harare">📍 Find Our Shop</a>
+
+  <!-- ===== CATALOGUE - EDIT PRODUCTS HERE ===== -->
+  <div class="section-title">🛍️ Shop Our Catalogue</div>
+  <div class="filter">
+    <button class="active" onclick="filterItems('all',this)">All</button>
+    <button onclick="filterItems('dresses',this)">Dresses</button>
+    <button onclick="filterItems('shoes',this)">Shoes</button>
+    <button onclick="filterItems('bags',this)">Bags</button>
+  </div>
+
+  <div class="grid" id="catalogue">
+    <!-- Product 1 -->
+    <div class="item badge" data-cat="dresses">
+      <img src="dress1.jpg" alt="Dress">
+      <div class="item-info"><b>Summer Floral Dress</b><span>Dresses • S - XL</span><div class="price">$25</div><button class="order" onclick="order('Summer Floral Dress - $25')">Order on WhatsApp</button></div>
+    </div>
+    <!-- Product 2 -->
+    <div class="item" data-cat="shoes">
+      <img src="shoe1.jpg" alt="Shoes">
+      <div class="item-info"><b>White Sneakers</b><span>Shoes • Size 3-8</span><div class="price">$30</div><button class="order" onclick="order('White Sneakers - $30')">Order on WhatsApp</button></div>
+    </div>
+    <!-- Product 3 -->
+    <div class="item" data-cat="bags">
+      <img src="bag1.jpg" alt="Bag">
+      <div class="item-info"><b>Mini Handbag</b><span>Bags • Black / Pink</span><div class="price">$18</div><button class="order" onclick="order('Mini Handbag - $18')">Order on WhatsApp</button></div>
+    </div>
+    <!-- Product 4 -->
+    <div class="item" data-cat="dresses">
+      <img src="dress2.jpg" alt="Dress">
+      <div class="item-info"><b>Evening Maxi Dress</b><span>Dresses • M - 3XL</span><div class="price">$35</div><button class="order" onclick="order('Evening Maxi Dress - $35')">Order on WhatsApp</button></div>
+    </div>
+  </div>
+
+  <button class="big pink" onclick="viewAll()">📲 View Full Catalogue on WhatsApp</button>
+  <button class="big white" onclick="saveContact()">💾 Save Contact</button>
+  <button class="big black" onclick="shareCard()">🔗 Share This Card</button>
+
+  <div class="footer">Delivery in Harare • $2 - $5<br>Card by You | WhatsApp: 0713354547</div>
+</div>
+
+<script>
+function filterItems(cat, btn){
+  document.querySelectorAll('.filter button').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.item').forEach(item=>{
+    item.style.display = (cat==='all' || item.dataset.cat===cat) ? 'block' : 'none';
+  });
+}
+function order(product){
+  // EDIT: WhatsApp number
+  var msg = "Hi Chic Boutique! I want to order:%0A" + encodeURIComponent(product) + "%0A%0AWhat sizes / colours are available?";
+  window.open("https://wa.me/263713354547?text=" + msg, "_blank");
+}
+function viewAll(){
+  window.open("https://wa.me/263713354547?text=Hi! Please send me your full catalogue", "_blank");
+}
+function saveContact(){
+  var vcard = "BEGIN:VCARD\nVERSION:3.0\nFN:Chic Boutique\nORG:Chic Boutique\nTEL:+263713354547\nURL:https://instagram.com/YOURHANDLE\nEND:VCARD";
+  var blob = new Blob([vcard], {type:'text/vcard'});
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'Chic-Boutique.vcf';
+  a.click();
+}
+function shareCard(){
+  if(navigator.share){
+    navigator.share({title:'Chic Boutique', text:'Chic Boutique - New Arrivals! Order on WhatsApp', url: window.location.href});
+  } else {
+    navigator.clipboard.writeText(window.location.href);
+    alert('Link copied! Paste it on WhatsApp Status.');
+  }
+}
+</script>
+</body>
+</html>
